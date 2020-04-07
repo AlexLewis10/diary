@@ -3,10 +3,30 @@
     "coverage": {
       "/Users/Alex/Documents/Makers/week4/diary/app.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/Alex/Documents/Makers/week4/diary/spec/features/infra_test_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
         ]
       }
     },
-    "timestamp": 1586255586
+    "timestamp": 1586256132
   }
 }
