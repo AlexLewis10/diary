@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
 
   get '/' do
-    "Hello world"
+    erb :index
   end
 
   # start the server if ruby file executed directly
