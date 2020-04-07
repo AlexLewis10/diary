@@ -1,5 +1,8 @@
 class Entry
-  def add(entry)
-    
+
+  attr_reader :add
+  
+  def initialize(new_entry)
+    @add = new_entry
   end
 end
