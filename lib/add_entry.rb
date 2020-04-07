@@ -1,2 +1,5 @@
 class Entry
-end 
+  def add(entry)
+    
+  end
+end
