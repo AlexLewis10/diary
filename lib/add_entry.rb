@@ -1,4 +1,4 @@
-class Entry
+class Diary
 
   attr_reader :add
 

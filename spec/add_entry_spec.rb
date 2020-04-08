@@ -1,8 +1,8 @@
 require 'add_entry'
 
-describe Entry do
-  let(:new_entry) { Entry.new }
+describe Diary do
+  let(:diary) { Diary.new }
   it "responds to add" do
-    expect(new_entry).to respond_to :add
+    expect(diary).to respond_to :add
   end
 end
