@@ -1,3 +1,8 @@
+## Diary App
+An simple web app that allows you to keep a daily diary
+
+Must add database set up and overall set up
+
 ```
 As a user
 So that I can keep a daily diary
