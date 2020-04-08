@@ -15,21 +15,24 @@
           1,
           1,
           1,
-          1,
           null,
           null,
           1,
           null
         ]
       },
-      "/Users/Alex/Documents/Makers/week4/diary/lib/add_entry.rb": {
+      "/Users/Alex/Documents/Makers/week4/diary/lib/diary.rb": {
         "lines": [
           1,
           null,
           1,
           null,
-          1,
-          2,
+          4,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -39,7 +42,8 @@
           1,
           null,
           1,
-          2,
+          1,
+          1,
           1,
           1,
           null,
@@ -48,6 +52,8 @@
       },
       "/Users/Alex/Documents/Makers/week4/diary/spec/features/diary_spec.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -67,6 +73,6 @@
         ]
       }
     },
-    "timestamp": 1586343989
+    "timestamp": 1586362517
   }
 }

@@ -1,16 +1,15 @@
 require 'sinatra/base'
-require 'add_entry'
+require './lib/diary'
 
-class App < Sinatra::Base
+class DiaryManager < Sinatra::Base
 
   get '/' do
     erb :index
   end
 
-  get '/diary' do
-    new = Diary.new 
-    @diary = new.add
-    erb :diary
+  get '/diary/index' do
+    @entries = Diary.all
+    erb :'diary/index'
   end
   # start the server if ruby file executed directly
   run! if app_file == $0

@@ -1,8 +1,9 @@
-require 'add_entry'
+require 'diary'
 
 describe Diary do
-  let(:diary) { Diary.new }
-  it "responds to add" do
-    expect(diary).to respond_to :add
+  it "list the diary entries" do
+    expect(Diary.all).to include "meeting"
+    expect(Diary.all).to include "code review"
+    expect(Diary.all).to include "lunchtime"
   end
 end
