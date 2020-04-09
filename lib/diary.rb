@@ -9,7 +9,7 @@ class Diary
       connection = PG.connect(dbname: 'diary_manager')
     end
       result = connection.exec("SELECT * FROM diary")
-      result.map { |diary| diary['diary'] }
+      result.map { |diary| diary['entry'] }
   end
 
   def self.create(diary:)
@@ -19,6 +19,6 @@ class Diary
       connection = PG.connect(dbname: 'diary_manager')
     end
 
-    connection.exec("INSERT INTO diary (diary) VALUES('#{diary}')")
+    connection.exec("INSERT INTO diary (entry) VALUES('#{diary}')")
   end
 end
