@@ -13,3 +13,11 @@ describe Diary do
     expect(Diary.all).to include "lunchtime"
   end
 end
+
+describe '.create' do
+  it 'creates a new diary entry' do
+    Diary.create(diary: 'take a break')
+
+    expect(Diary.all).to include 'take a break'
+  end
+end

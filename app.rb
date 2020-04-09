@@ -17,9 +17,7 @@ class DiaryManager < Sinatra::Base
   end
 
   post "/diary" do
-    entry = params['entry']
-    connection = PG.connect(dbname: 'diary_manager_test')
-    connection.exec("INSERT INTO diary (diary) VALUES('#{entry}')")
+    Diary.create(diary: params['entry'])
     redirect '/diary/index'
   end
   # start the server if ruby file executed directly
