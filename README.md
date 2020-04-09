@@ -1,15 +1,21 @@
-## Diary App
+# Diary App
 An simple web app that allows you to keep a daily diary
 
 
-# Database setup
-```
-- Connect to psql
-- Create the database using the psql command CREATE DATABASE diary_manager;
-- Connect to the database using the pqsl command \c diary_manager;
-- Run the query we have saved in the file 01_create_diary_table.sql
-```
-# User Stories
+## Database setup
+
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE diary_manager;
+3. Connect to the database using the pqsl command \c diary_manager;
+4. Run the query we have saved in the file 01_create_diary_table.sql
+
+### Test environment DB
+1. admin=# CREATE DATABASE "diary_manager_test";
+2. admin=# CREATE TABLE diary(id SERIAL PRIMARY KEY, entry VARCHAR(60));
+
+
+
+## User Stories
 ```
 As a user
 So that I can keep a daily diary

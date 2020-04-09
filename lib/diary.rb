@@ -1,10 +1,10 @@
+require 'pg'
+
 class Diary
 
   def self.all
-    entries = [
-      "meeting",
-      "code review",
-      "lunchtime"
-    ]
+    connection = PG.connect(dbname: 'diary_manager')
+    result = connection.exec("SELECT * FROM diary")
+    result.map { |diary| diary['entry'] }
   end
 end
