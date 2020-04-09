@@ -8,6 +8,7 @@ class DiaryManager < Sinatra::Base
   end
 
   get '/diary/index' do
+
     @entries = Diary.all
     erb :'diary/index'
   end
