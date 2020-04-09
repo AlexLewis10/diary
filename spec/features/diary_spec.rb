@@ -12,3 +12,13 @@ feature "Viewing diary" do
     expect(page).to have_content "lunchtime"
   end
 end
+
+feature "Adding a new diary entry" do
+  scenario "a user can add a new diary entry to diary manager" do
+    visit '/diary/new'
+    fill_in('entry', with: "make user story")
+    click_button('Submit')
+
+    expect(page).to have_content "make user story"
+  end
+end
