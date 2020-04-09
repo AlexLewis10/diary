@@ -12,6 +12,10 @@ class DiaryManager < Sinatra::Base
     erb :'diary/index'
   end
 
+  post '/add_new' do
+    redirect '/diary/new'
+  end
+
   get '/diary/new' do
     erb :'diary/new'
   end

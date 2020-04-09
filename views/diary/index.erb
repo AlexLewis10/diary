@@ -1,5 +1,19 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+
+
+
 <ul>
   <% @entries.each do |entry| %>
     <li><%= entry %></li>
   <% end %>
 </ul>
+
+<form action="/add_new" method="post">
+  <input class="button" type="button" value="Add new" name="Add new">
+</form>
+
+</body>
